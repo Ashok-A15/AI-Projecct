@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Maze Solver</title>
+  <style>
+    /* Body and General Styling */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: linear-gradient(to bottom right, #2d3e50, #4e5d6c);
+  margin: 0;
+  padding: 0;
+  color: #f9f9f9;
+  text-align: center;
+}
+
+/* Header Styling */
+header {
+  background-color: #1a73e8; /* Vibrant blue */
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* About Container */
+.about-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.about-container h2 {
+  margin-top: 20px;
+  color: #ffd700; /* Golden yellow */
+  font-size: 26px;
+  border-bottom: 2px solid #ffd700;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.about-container p {
+  line-height: 1.8;
+  color: #eeeeee;
+  margin-bottom: 20px;
+}
+
+.about-container ul, 
+.about-container ol {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.about-container li {
+  margin-bottom: 10px;
+  color: #f5f5f5;
+}
+
+.about-container ol li {
+  margin-bottom: 12px;
+}
+
+/* About Image */
+.about-image {
+  max-width: 100%;
+  margin: 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Blockquote */
+blockquote {
+  background: #1a73e8;
+  border-left: 5px solid #ffd700;
+  margin: 20px 0;
+  padding: 15px 20px;
+  font-style: italic;
+  color: #f9f9f9;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.primary-button {
+  display: block;
+  width: fit-content;
+  margin: 30px auto;
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #ffd700; /* Golden yellow */
+  color: #1a1a1a; /* Dark color for contrast */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.primary-button:hover {
+  background-color: #f4c60e;
+}
+
+.primary-button:active {
+  background-color: #e6b100;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Maze Solver</h1>
+  </header>
+  <main class="about-container">
+    <section class="about-section">
+      <h2>What is Maze Solver?</h2>
+      <p>
+        The Maze Solver is a web-based application designed to explore the fascinating world of pathfinding algorithms. 
+        It provides a hands-on interactive tool to demonstrate how a maze can be solved using algorithms like 
+        <strong>Breadth-First Search (BFS)</strong>.
+      </p>
+
+    </section>
+
+    <section class="about-section">
+      <h2>Features</h2>
+      <ul>
+        <li>Interactive grid for designing mazes</li>
+        <li>Customizable start and end points</li>
+        <li>Real-time visualization of the solving process</li>
+        <li>Reset functionality to experiment with multiple maze designs</li>
+      </ul>
+    </section>
+
+    <section class="about-section">
+      <h2>How to Use</h2>
+      <ol>
+        <li><strong>Design the Maze:</strong> Click on cells to create walls, and select start and end points.</li>
+        <li><strong>Solve the Maze:</strong> Press the "Solve Maze" button to watch the algorithm in action.</li>
+        <li><strong>Reset:</strong> Press the "Reset Maze" button to start over with a new design.</li>
+      </ol>
+    </section>
+
+    <section class="about-section">
+      <h2>Behind the Scenes</h2>
+      <p>
+        The Maze Solver uses the BFS algorithm to guarantee the shortest path between the start and end points. 
+        It traverses the grid systematically, checking all possible routes, and avoids obstacles (walls) you place 
+        in the maze.
+      </p>
+      <blockquote>
+        "The Maze Solver is an excellent way to visualize algorithmic thinking and explore computational problem-solving."
+      </blockquote>
+    </section>
+
+    <button class="primary-button" onclick="window.location.href='game.html'">Play the Game</button>
+  </main>
+</body>
+</html>
